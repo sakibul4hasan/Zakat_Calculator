@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/cover2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="যাকাত ক্যালকুলেটর"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font2"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="যাকাত এর হিসাব করুন নিমিষেই"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="#2A62C4"
+                android:fontFamily="@font/font2"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/home_btn_style"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:id="@+id/zCalcu"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/calcu2"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত ক্যালকুলেটর"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prayer2"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত কখন ফরজ"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/list2"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাতের সর্ত"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/muney"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত দেওয়ার নিয়ম"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/idea"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাতের হিসাব কি ভাবে বের করব"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/unknown"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত কি?"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ভিড়িও সমূহ"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font5"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/video1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/video_style"
+                    >
+                    <ImageView
+                        android:id="@+id/v1"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="যাকাতের গুরুত্ব ও তাৎপর্য সম্পর্কে বিস্তারিত বক্তব্য || Mizanur Rahman Azhari || Islamic akida"
+                        android:maxLines="1"
+                        android:textColor="#2C2C2C"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/video2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/video_style"
+                    >
+
+                    <ImageView
+                        android:id="@+id/v2"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="যাকাত দেওয়ার নিয়ম | মিজানুর রহমান আজহারী | Jakat dewar niyom | Mizanur Rahman Azhari Waz | Jakat"
+                        android:maxLines="1"
+                        android:textColor="#2C2C2C"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/video3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/video_style"
+                    >
+                    <ImageView
+                        android:id="@+id/v3"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="যাকাত কাদের উপর ফরজ? যাকাত যাদেরকে দিবেন? যেভাবে দিবেন? যাকাত দেওয়ার উপায়। (আহমদউল্লাহ মাদানী)"
+                        android:maxLines="1"
+                        android:textColor="#2C2C2C"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/video4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/video_style"
+                    >
+
+                    <ImageView
+                        android:id="@+id/v4"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="কি পরিমান সম্পদ থাকলে যাকাত দিতে হবে sheikh ahmadullah"
+                        android:maxLines="1"
+                        android:textColor="#2C2C2C"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginRight="95dp"
+                android:layout_marginLeft="95dp"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/book"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাতের খাত"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_style"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/unlike"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত না দিলে কি হয়"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font2"
+                        android:textSize="9sp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

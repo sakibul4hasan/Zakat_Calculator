@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ZakatCalcu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="যাকাত ক্যালকুলেটর"
+            android:textSize="20sp"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font5"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font5"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:text="ইসলামে ৭.৫ ভরি স্বর্ণ  কিংবা ৫২.৫ ভরি রূপা অথবা সমপরিমান অর্থ এক বছর যাবত সঞ্চিত থাকলে তার বাজার মূল্য অনুযায়ী মোট অর্থের শতকরা ২.৫% যাকাত দেওয়ার বিধান রয়েছে।"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#2A62C4"
+            android:fontFamily="@font/font5"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:text="এই বছর হিসাব যাকাতের পরিমান"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="47250 ট"
+            android:textSize="20sp"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font2"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:text="রূপার দাম ৮০০-৯০০ টাকা, স্বর্ণ  ৬২,৮৬৯ টাকা, আপনার এলাকার স্বর্ণ  বা রূপার দাম দিতে পারেন কারণ স্বর্ণ  ও রূপার দাম কম বেশি হতে পারে বাজার অনুযায়ী"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#54000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <EditText
+                    android:id="@+id/edgoldVori"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="কতো ভরি স্বর্ণ "
+                    android:fontFamily="@font/font3"
+                    android:background="@drawable/input_style"
+                    />
+                <EditText
+                    android:id="@+id/edgoldPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="কতো টাকা করে"
+                    android:fontFamily="@font/font3"
+                    android:background="@drawable/input_style"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="15dp"
+                >
+                <EditText
+                    android:id="@+id/edRupaGram"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="কতো ভরি রূপা"
+                    android:fontFamily="@font/font3"
+                    android:background="@drawable/input_style"
+                    />
+                <EditText
+                    android:id="@+id/edRupaPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="কতো টাকা করে"
+                    android:fontFamily="@font/font3"
+                    android:background="@drawable/input_style"
+                    />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edNogodTk"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="নগদ অর্থ কতো টাকা"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edNijHateTk"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="নিজ হাতে কতো টাকা"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edJomaTk"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="জমানো অর্থ"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edBankJoma"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="ব্যাংকে জমা"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edPrivatePund"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="প্রাইভেট ফান্ড"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edPectPund"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="ফ্যাক্টরীর বিনিয়োগ কতো"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edSecurityPund"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="সিকিউরিটি কতো টাকা"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edShare"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="শেয়ার"
+                android:fontFamily="@font/font3"
+                android:background="@drawable/input_style"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/HisabKorun"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="হিসাব করুন"
+                android:textSize="20sp"
+                android:background="@drawable/btn_style"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font5"
+                />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="আপনার মোট সম্পদের পরিমান"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font5"
+                    />
+                <TextView
+                    android:id="@+id/tvDesplay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvDesplay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="এই বছর আপনার যাকাত হলো"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font5"
+                    />
+                <TextView
+                    android:id="@+id/tvDesplay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
